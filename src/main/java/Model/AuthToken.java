@@ -5,8 +5,6 @@ import com.google.gson.annotations.SerializedName;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
 import java.util.TimeZone;
 
 
@@ -15,19 +13,19 @@ import static java.util.Locale.US;
 public class AuthToken {
 
     @SerializedName("access_token")
-    String accessToken;
+    private String accessToken;
 
     @SerializedName("token_type")
-    String tokenType;
+    private String tokenType;
 
     @SerializedName("expires_in")
-    Integer expiresIn;
+    private Integer expiresIn;
 
     @SerializedName(".issued")
-    String issued;
+    private String issued;
 
     @SerializedName(".expires")
-    String expires;
+    private String expires;
 
     public AuthToken() {
     }
