@@ -56,11 +56,11 @@ public class AuthToken {
         this.expiresIn = expiresIn;
     }
 
-    public String getIssued() throws ParseException {
+    public String getIssued() {
         return issued;
     }
 
-    public void setIssued(String issued) throws ParseException {
+    public void setIssued(String issued) {
         this.issued = issued;
     }
 
